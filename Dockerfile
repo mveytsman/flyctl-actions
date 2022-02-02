@@ -1,8 +1,4 @@
-FROM alpine
-
-RUN apk add --no-cache curl
-
-RUN curl -L https://fly.io/install.sh | FLYCTL_INSTALL=/usr/local sh
+FROM flyio/flyctl:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
