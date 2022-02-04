@@ -10,7 +10,7 @@ fi
 # Default to deploying with a remote builder unless local is specified explicitly
 STRATEGY="--remote-only"
 
-for i in "$*" ; do
+for i in "$@" ; do
   if [[ $i == "--local-only" ]] ; then
     STRATEGY="--local-only"
     break
