@@ -17,7 +17,7 @@ for i in "$*" ; do
   fi
 done
 
-sh -c "flyctl $* $STRATEGY"
+echo "flyctl $* $STRATEGY"
 
 ACTUAL_EXIT="$?"
 
